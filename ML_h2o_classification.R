@@ -78,19 +78,19 @@ range01<-function(x, ...){
 
 
           
-ML_h2o <- function(data_train,
-                   data_test,
-                   outcome,
-                   algorithms = c("NB"),
-                   train_per = 0.75,
-                   folds = 5,
-                   std_data = FALSE,
-                   oversampling = FALSE, continuous_vars = NULL,dupl = 1,
-                   undersampling = FALSE,
-                   normalization = FALSE,
-                   name = NULL,
-                   var_imp = FALSE,
-                   hyperparams_report = FALSE){
+ML_h2o_class <- function(data_train,
+                   		data_test,
+                   		outcome,
+                   		algorithms = c("NB"),
+                   		train_per = 0.75,
+                   		folds = 5,
+                   		std_data = FALSE,
+                   		oversampling = FALSE, continuous_vars = NULL,dupl = 1,
+                   		undersampling = FALSE,
+                   		normalization = FALSE,
+                   		name = NULL,
+                   		var_imp = FALSE,
+                   		hyperparams_report = FALSE){
   
   
   print("############################# MACHINE LEARNING INITIATED #############################")
