@@ -743,7 +743,7 @@ ML_h2o_regression <- function(data_train,
     return(list(df_test_measures, pred_vs_observations))}
   
   if(var_imp == TRUE){
-  	prov <- list(df_test_measures, df_toROC)
+  	prov <- list(df_test_measures,pred_vs_observations)
 
   	if ("GBM" %in% algorithms){
   		prov <- list.append(prov, GBM_var_imp)
